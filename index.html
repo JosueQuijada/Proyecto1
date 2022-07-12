@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Ramqui.site</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #068ff1;">
+        <a class="navbar-brand" href="#">SU LOGO AQUI</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contactenos.html">Contactenos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modelContactenos">Contactenos con
+                        modal</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="container">
+                <div class="jumbotron">
+                    <h1 class="display-3">Desarrollo WEB</h1>
+                    <p class="lead">Lo mejor del mercado</p>
+                    <hr class="my-2">
+                    <p>Contactenos</p>
+                    <p class="lead">
+                        <button type="button" class="btn btn-primary btn-lg" id="btn-consultar-api" data-toggle="modal"
+                            data-target="#modelAPI">Consultar api</button>
+
+                    </p>
+                </div>
+
+                <div class="row ml-2">
+
+                    <div class="col-4">
+                        <div class="card">
+                            <div id="Car-1">
+                                <img class="img-description" src="img/profile.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                        libero reprehenderit dignissimos, voluptatibus aut illum voluptatem voluptas,
+                                        eum tenetur quod, amet soluta nesciunt dolores ex voluptatum inventore. Eveniet,
+                                        architecto voluptas.</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary mb-2" id="btn-card-1">Ocultar/Mostrar</button>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card">
+                            <div id="Car-2">
+                                <img class="img-description" src="img/profile.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                        libero reprehenderit dignissimos, voluptatibus aut illum voluptatem voluptas,
+                                        eum tenetur quod, amet soluta nesciunt dolores ex voluptatum inventore. Eveniet,
+                                        architecto voluptas.</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary mb-2" id="btn-card-2">Ocultar/Mostrar</button>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card">
+                            <div id="Car-3">
+                                <img class="img-description" src="img/profile.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                        libero reprehenderit dignissimos, voluptatibus aut illum voluptatem voluptas,
+                                        eum tenetur quod, amet soluta nesciunt dolores ex voluptatum inventore. Eveniet,
+                                        architecto voluptas.</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary mb-2" id="btn-card-3">Ocultar/Mostrar</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <h3 class="mt-5 mb-5"> Tabla con otro API <button type="button" class="btn btn-warning"
+                        id="mostrar-ocultar-tb">Generar/ocultar</button>
+                    <hr>
+                </h3>
+
+
+
+                <table class="table table-bordered  table-striped" id="tb-api">
+                    <thead class="thead-dark">
+                        <th>Album Id</th>
+                        <th>Id registro</th>
+                        <th>titulo</th>
+                        <th>foto</th>
+                    </thead>
+
+                    <tbody id="tbdatos"></tbody>
+                </table>
+
+
+                <h3 class="mt-5 mb-5"> presentacion empresa
+                    <hr>
+                </h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="d-flex align-center justify-content-center">
+                            <div class="col-6 mt-5">
+                                <div class="card">
+                                    <div id="Car-3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">RAMQUI.SITE</h5>
+                                            <p class="card-text">Somos una empresa dedicada al desarrollo web, trabajando con lo mas moderno en tecnologia a precios sumamente accesibles, tenemos amplia experiencia en lenguajes JavaScript, HTML, CSS, PHP.
+                                                <br>
+                                                Frameworks: Angular, react, vue.js, Larabel, entre otros.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <img class="img-descripcion" src="img/ramqui.png" alt="" >
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </section>
+
+
+
+        <footer>
+            <div class="d-flex justify-content-center bg-dark text-white mt-5">
+                <p class="mt-2">todos los derechos reservados &copy; by: Josue Quijada, (+506)84139519,
+                    j.quijada@gruposef.com</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Modal API RAMDON-->
+    <div class="modal fade" id="modelContactenos" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h5 class="modal-title">Contactenos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Nombre y Apellidos</label>
+                            <input type="text" name="" id="" class="form-control" placeholder="Nombre y Apellidos"
+                                aria-describedby="Nombre y Apellidos" required>
+                            <small id="helpId" class="text-muted">Obligatorio</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Correo electronico</label>
+                            <input type="email" name="" id="" class="form-control" placeholder="Correo electronico"
+                                aria-describedby="Correo electronico" required>
+                            <small id="helpId" class="text-muted">Obligatorio</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Telefono</label>
+                            <input type="text" name="" id="" class="form-control" placeholder="Telefono"
+                                aria-describedby="Telefono" required>
+                            <small id="helpId" class="text-muted">Obligatorio</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Comentarios</label>
+                            <textarea class="form-control" name="" id="" rows="2" placeholder="Comentarios"></textarea>
+                            <small id="helpId" class="text-muted">Obligatorio</small>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="radio" name="radio" id="radio" value="Queja"><span>QUEJAS Y SUGERENCIAS-
+                                Contraloria de Servicios</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="radio" id="radio" value="Ayudenos"><span>AYUDENOS A MEJORAR-
+                                Sitio Web</span>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" name="" id="" class="btn btn-primary btn-block"> Enviar</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal API RAMDON-->
+    <div class="modal fade" id="modelAPI" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h5 class="modal-title">API= https://randomuser.me/api/</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Nombre y Apellidos</label>
+                            <input type="text" name="" id="" class="form-control" placeholder="Nombre y Apellidos"
+                                aria-describedby="Nombre y Apellidos" required>
+                            <small id="helpId" class="text-muted">Obligatorio</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Correo electronico</label>
+                            <input type="email" name="" id="" class="form-control" placeholder="Correo electronico"
+                                aria-describedby="Correo electronico" required>
+                            <small id="helpId" class="text-muted">Obligatorio</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Telefono</label>
+                            <input type="text" name="" id="" class="form-control" placeholder="Telefono"
+                                aria-describedby="Telefono" required>
+                            <small id="helpId" class="text-muted">Obligatorio</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Comentarios</label>
+                            <textarea class="form-control" name="" id="" rows="2" placeholder="Comentarios"></textarea>
+                            <small id="helpId" class="text-muted">Obligatorio</small>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="radio" name="radio" id="radio" value="Queja"><span>QUEJAS Y SUGERENCIAS-
+                                Contraloria de Servicios</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="radio" id="radio" value="Ayudenos"><span>AYUDENOS A MEJORAR-
+                                Sitio Web</span>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" name="" id="" class="btn btn-primary btn-block"> Enviar</button>
+                        </div>
+                    </form>
+                    <div class="container-fluid">
+                        <div class="card">
+                            <div id="Car-1">
+                                <img class="img-description-modal" src="img/profile.png" alt="Card image cap"
+                                    id="fotografia">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center" id="nombremodal"></h5>
+                                    <p class="card-text text-center" id="datos"></p>
+                                    <p class="card-text text-center">
+                                        <button type="button" class=" btn btn-warning" id="email"><i
+                                                class="fa fa-envelope" aria-hidden="true"></i></button>
+                                        <button type="button" class=" btn btn-warning" id="fecha"><i
+                                                class="fa fa-calendar" aria-hidden="true"></i></button>
+                                        <button type="button" class=" btn btn-warning" id="telefono"><i
+                                                class="fa fa-phone" aria-hidden="true"></i> </button>
+                                        <button type="button" class=" btn btn-warning" id="ubicacion"><i
+                                                class="fa fa-map-marker" aria-hidden="true"></i> </button>
+                                    </p>
+                                    <div class="div-imagen">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success" id="cambiar-api-ramdon">Cambiar con api</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/8f8c37172d.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
